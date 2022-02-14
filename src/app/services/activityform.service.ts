@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http'
+import { ActivityForm } from '../interfaces/ActivityForm';
 
 @Injectable({
   providedIn: 'root'
@@ -14,11 +15,11 @@ export class ActivityformService {
     return this.http.get(this.baseUrl);
  }
 
-  createEntry(entry: any) {
-    return this.http.post(this.baseUrl, entry);
+  createActivity(activity: any) {
+    return this.http.post(this.baseUrl, activity);
   }
 
-  updateEntry(id:number, entry:any) {
-    return this.http.put(this.baseUrl + '/' + id, entry);
+  updateActivity(id:number, activity:any) {
+    return this.http.put(this.baseUrl + '/' + id, activity);
   }
 }

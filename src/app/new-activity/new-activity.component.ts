@@ -39,7 +39,7 @@ export class NewActivityComponent implements OnInit {
       comments : this.activityForm.value.comments
      }
      console.log('data to be created' + JSON.stringify(activityFormData));
-    this.activityformService.createEntry(activityFormData).subscribe((data) => {
+    this.activityformService.createActivity(activityFormData).subscribe((data) => {
       console.log('data - ' + data);
     })
   }

@@ -18,6 +18,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ActivityformService } from './services/activityform.service';
+import { UpdateActivityComponent } from './update-activity/update-activity.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ActivityformService } from './services/activityform.service';
     ActivitiesComponent,
     FooterComponent,
     HeaderComponent,
-    NewActivityComponent
+    NewActivityComponent,
+    UpdateActivityComponent
   ],
   imports: [
     BrowserModule,
